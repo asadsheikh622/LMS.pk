@@ -9,6 +9,6 @@ Academy LMS ek modern aur responsive Learning Management System (LMS) hai jo edu
 * **Payment & Fees Tracking:** Unpaid vouchers aur financial reports ka tracking system.
  
 ### 🛠️ Tech Stack:
-* **Frontend:** React, Vite, Tailwind CSS / HTML, CSS, JavaScript
-* **Backend:** Node.js / Express (ya aapka jo bhi backend ho)
+* **Frontend:** React, Vite, Tailwind CSS / HTML, CSS, TypeScript
+* **Backend:** Node.js / Express 
 * **Database:** PostgreSQL
