@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+      (function() {
+        try {
+          var originalFetch = window.fetch;
+          var customFetch = null;
+          var descriptor = {
+            configurable: true,
+            enumerable: true,
+            get: function() {
+              return customFetch || (typeof originalFetch === 'function' ? originalFetch.bind(window) : originalFetch);
+            },
+            set: function(fn) {
+              customFetch = fn;
+            }
+          };
+          try {
+            Object.defineProperty(window, 'fetch', descriptor);
+          } catch (_) {}
+          if (typeof Window !== 'undefined' && Window.prototype) {
+            try {
+              Object.defineProperty(Window.prototype, 'fetch', descriptor);
+            } catch (_) {}
+          }
+          if (typeof globalThis !== 'undefined' && globalThis !== window) {
+            try {
+              Object.defineProperty(globalThis, 'fetch', descriptor);
+            } catch (_) {}
+          }
+        } catch (_) {}
+      })();
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Management System</title>
+    <meta name="description" content="A modern, full-stack Learning Management System (LMS) with role-based access for students, teachers, and administrators." />
+    <meta property="og:title" content="Learning Management System" />
+    <meta property="og:description" content="A modern, full-stack Learning Management System (LMS) with role-based access for students, teachers, and administrators." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

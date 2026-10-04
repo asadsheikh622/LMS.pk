@@ -1,0 +1,6 @@
+{
+  "name": "Learning Management System",
+  "description": "A modern, full-stack Learning Management System (LMS) with role-based access for students, teachers, and administrators.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
