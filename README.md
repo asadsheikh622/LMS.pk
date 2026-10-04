@@ -1,20 +1,14 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+## 🚀 Academy LMS - Enterprise Education
 
-# Run and deploy your AI Studio app
+Academy LMS ek modern aur responsive Learning Management System (LMS) hai jo educational institutions ke administrative tasks aur student management ko asan banane ke liye design kiya gaya hai.
 
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/11d92e5c-49a5-48af-ba83-ae03173f936d
-
-## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### ✨ Key Features:
+* **Admin Dashboard:** Campus check-in rates, active accounts, aur financial metrics ka overview.
+* **Student Registry & Admission:** New student admissions, unique student IDs, roll numbers, aur course/batch assignment ka mukammal system[cite: 2, 3].
+* **Academic Operations:** Courses, batches, attendance, assignments, quizzes, aur class schedules ki management.
+* **Payment & Fees Tracking:** Unpaid vouchers aur financial reports ka tracking system.
+ 
+### 🛠️ Tech Stack:
+* **Frontend:** React, Vite, Tailwind CSS / HTML, CSS, TypeScript
+* **Backend:** Node.js / Express 
+* **Database:** PostgreSQL
